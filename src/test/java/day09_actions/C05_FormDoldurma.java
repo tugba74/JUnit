@@ -18,7 +18,7 @@ public class C05_FormDoldurma extends TestBase {
         //facebook.com sayfasına gidin
         driver.get("http://www.facebook.com");
         // cookies'i kabul et
-        driver.findElement(By.xpath("//button[@title='Only allow essential cookies']")).click();
+        //driver.findElement(By.xpath("//button[@title='Only allow essential cookies']")).click();
         // yeni hesap olustur butonuna basin
         driver.findElement(By.xpath("//a[@class='_42ft _4jy0 _6lti _4jy6 _4jy2 selected _51sy']")).click();
         // ilgili alanlari faker kutuphanesinden degerlerle doldurup
@@ -53,6 +53,10 @@ public class C05_FormDoldurma extends TestBase {
         ReusableMethods.bekle(20);
         WebElement hataMesajElementi= driver.findElement(By.id("reg_error_inner"));
         Assert.assertTrue(hataMesajElementi.isDisplayed());
+
+        driver.findElement(By.xpath("//input[@name='new_name']//input")).click();
+        driver.findElement(By.cssSelector("input[name='new_name'] input")).click();
+
 
 
     }
