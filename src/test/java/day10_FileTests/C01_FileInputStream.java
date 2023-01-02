@@ -26,14 +26,14 @@ public class C01_FileInputStream {
 
         System.out.println(System.getProperty("user.dir"));
         // o anda calisan dosyanin (C01_FileInputStreeam) yolunu verir
-        // /Users/ahmetbulutluoz/IdeaProjects/com.Team105JUnit
+        // /Users/as/Desktop/com.Team105JUnit
 
 
         System.out.println(System.getProperty("user.home"));
         // kullanicinin temel path'ini verir.
-        // /Users/ahmetbulutluoz
+        // /Users/as
         // Masaustune gitmek istersek
-        // /Users/ahmetbulutluoz + /Desktop eklememiz yeterlidir
+        // /Users/as + /Desktop eklememiz yeterlidir
         // Downloads'a gitmek istersek
         // /Users/ahmetbulutluoz + /Downloads eklememiz yeterlidir
         // Kodlarimizin dinamik olmasi yani kisinin bilgisayarindaki
@@ -41,7 +41,7 @@ public class C01_FileInputStream {
         // File testlerinde kullanilacak dosya yolunu
         // user.home... temel path'ini calistigi bilgisayardan alacak sekilde
         // olustururuz
-        // dosyaYolu="/Users/ahmetbulutluoz/Desktop/MerhabaJava.docx";
+        // dosyaYolu="/Users/as/Desktop/MerhabaJava.docx";
 
         String dinamikDosyaYolu= System.getProperty("user.home") +"/Desktop/MerhabaJava.docx";
 

@@ -27,6 +27,7 @@ public class C03_FileUploadTesti extends TestBase {
          */
             WebElement chooseFileButonu= driver.findElement(By.xpath("//*[@id='file-upload']"));
             String dosyaYolu= System.getProperty("user.home")+"/Desktop/MerhabaJava.docx";
+
             chooseFileButonu.sendKeys(dosyaYolu);
             //Upload butonuna basalim.
             driver.findElement(By.xpath("//*[@id='file-submit']")).click();
