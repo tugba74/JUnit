@@ -1,4 +1,4 @@
-package day05_juntFramework;
+package day05_junitFramework;
 
 import org.junit.Ignore;
 import org.junit.Test;
